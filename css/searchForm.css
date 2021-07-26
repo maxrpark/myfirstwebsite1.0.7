@@ -1,0 +1,10 @@
+.movie__search {
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  z-index: -100;
+}
+/*# sourceMappingURL=searchForm.css.map */

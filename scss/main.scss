@@ -1,0 +1,28 @@
+// Base
+@import './base/typography';
+@import './base/reset';
+@import './base/utils';
+
+// Components
+@import './components/searchresult';
+@import './components/searchForm';
+@import './components/searchFormTop';
+@import './components/sidebar';
+@import './components/reviewOUTPUT';
+@import './components/dinamicReviews';
+
+// LAYOUTS
+@import './layouts/navigation';
+@import './layouts/modal';
+@import './layouts/titles';
+@import './layouts/footer';
+
+// LAYOUTS
+@import './mixins/mixins';
+
+// PAGES
+@import './pages/home';
+@import './pages/singleMovie';
+@import './pages/searchPage';
+@import './pages/profile';
+@import './pages/terms';

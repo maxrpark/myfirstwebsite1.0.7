@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+}
+body {
+  font-family: $font2;
+  letter-spacing: 0.05rem;
+}
+
+a {
+  text-decoration: none;
+  color: $primaryWhite;
+}

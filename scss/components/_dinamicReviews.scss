@@ -1,0 +1,33 @@
+.dinamic-reviews {
+  max-width: 920px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  line-height: 1.7rem;
+  display: none;
+  color: $primaryBack;
+}
+
+.dinamic-reviews-container {
+  display: flex;
+  margin: 1rem auto;
+
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1.2em;
+  text-align: center;
+
+  .arrows {
+    font-size: 1em;
+    cursor: pointer;
+
+    &__up {
+      display: none;
+    }
+  }
+}
+
+.show-reviews {
+  display: block;
+}

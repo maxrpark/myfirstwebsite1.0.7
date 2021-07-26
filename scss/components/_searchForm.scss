@@ -1,0 +1,37 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  &__search {
+    margin-left: 2rem;
+    height: 3rem;
+    border: transparent;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      &::placeholder {
+        color: $primaryBack;
+      }
+    }
+  }
+
+  &__btn {
+    width: 5rem;
+    height: 3rem;
+    background-color: white;
+    border: transparent;
+    cursor: pointer;
+    &:hover {
+      background: $blueColor1;
+      color: $primaryWhite;
+    }
+  }
+}

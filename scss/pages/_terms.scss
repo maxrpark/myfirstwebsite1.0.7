@@ -1,0 +1,30 @@
+.terms {
+  max-width: 920px;
+  margin: 2rem auto;
+  & a {
+    color: $blueColor1;
+    text-decoration: underline;
+  }
+
+  & h1,
+  h2,
+  h3,
+  h4 {
+    margin: 1rem;
+    text-align: center;
+  }
+  & p,
+  ul,
+  li {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2rem;
+  }
+  & li {
+    margin-bottom: 1rem;
+    list-style: none;
+  }
+  & strong {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,11 @@
+.section__title {
+  margin: 2rem;
+
+  font-size: 2rem;
+  font-family: $font3;
+  color: $primaryBack;
+  @media screen and (min-width: 678px) {
+    text-align: start;
+    margin: 2rem 5rem;
+  }
+}

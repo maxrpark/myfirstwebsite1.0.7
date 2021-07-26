@@ -1,0 +1,123 @@
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
+  display: none;
+  margin: 0 auto;
+  z-index: 101;
+  font-family: $font3;
+
+  &__description {
+    max-width: 800px;
+    min-height: 60vh;
+    border-radius: 3px;
+    display: grid;
+    place-content: center;
+  }
+  &-card {
+    background-color: $primaryWhite;
+    border-radius: 3px;
+    display: grid;
+    margin: 1rem;
+    overflow: hidden;
+
+    &__container {
+      display: grid;
+    }
+  }
+  &__movie--info {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    // align-items: start;
+    & h4 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    & p {
+      font-size: 1.2rem;
+    }
+    @media screen and (min-width: 678px) {
+      & h4 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      & p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &__description--img {
+    width: 50%;
+    height: 200px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+
+    object-fit: cover;
+    object-position: top;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+}
+.show-description {
+  display: grid;
+}
+@media screen and (min-width: 678px) {
+  .modal {
+    overflow: hidden;
+    &-card {
+      grid-template-columns: 1fr;
+    }
+    &__description--img {
+      object-fit: cover;
+      object-position: top;
+      padding: 2rem 0.5rem;
+      width: 35%;
+      height: auto;
+    }
+    &__container {
+      display: flex;
+    }
+    &__description--img {
+      padding: 2rem 0.5rem;
+    }
+  }
+  .show-description {
+    place-content: center;
+  }
+}
+
+.close-btn {
+  top: 1rem;
+  right: 1rem;
+  color: $redColor1;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.movie__btn {
+  display: grid;
+  font-family: $font3;
+  place-content: center;
+  width: 100%;
+  background-color: $blueColor1;
+  cursor: pointer;
+  height: 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: $primaryWhite;
+
+  &:active,
+  &:hover {
+    opacity: 0.9;
+  }
+}

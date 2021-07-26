@@ -1,0 +1,224 @@
+.header {
+  background: url(../img/hero-movie-master.jpg) center/cover no-repeat;
+  display: grid;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  place-content: center;
+  min-height: 47vh;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.hero__title {
+  color: $primaryWhite;
+  & h1 {
+    font-size: 4rem;
+  }
+  & h3 {
+    font-size: 2rem;
+  }
+}
+.logo {
+  min-width: 50px;
+  width: 50%;
+}
+.top {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url(../img/top.jpg) center/cover no-repeat;
+  padding: 0.5rem 0;
+}
+.adventure {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url(../img/action.jpg) center/cover no-repeat;
+  padding: 0.5rem 0;
+}
+.family {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url(../img/family.jpg) center/cover no-repeat;
+  padding: 0.5rem 0;
+}
+.horror {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url(../img/horror.jpg) center/cover no-repeat;
+  padding: 0.5rem 0;
+}
+
+.movies__Section {
+  display: flex;
+  width: 90%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 2rem auto;
+  color: $primaryWhite;
+
+  border-radius: 3px;
+
+  &--section-title h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: grey;
+  }
+
+  &::-webkit-scrollbar {
+    height: 15px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: $primaryWhite;
+    border: 2px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+  }
+}
+
+.movie {
+  &__single {
+    display: grid;
+    background: rgba($primaryWhite, 0.8);
+    border-radius: 3px;
+    grid-template-columns: 1fr;
+    height: 400px;
+    min-width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: $primaryBack;
+    position: relative;
+    cursor: pointer;
+  }
+  &__single-info {
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    // align-items: center;
+  }
+  &__single-info h4 {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  &__single-info--rating {
+    display: grid;
+    place-content: center;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    color: $primaryBack;
+    font-weight: 700;
+    border: 2px solid $primaryWhite;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.img-banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.section__recomended {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url(../img/recommended.jpg) center/cover no-repeat;
+  color: $primaryWhite;
+  min-height: 400px;
+  margin-bottom: 3rem;
+}
+
+.movie__recomended {
+  padding: 1rem;
+  max-width: 1070px;
+  @include center;
+
+  &-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+  }
+
+  @media screen and (min-width: 678px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    &-img {
+      width: 90%;
+      max-height: 400px;
+    }
+  }
+}
+
+.movie__recomended-info {
+  display: grid;
+  gap: 1rem;
+}
+.movieTagline {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.movieTitle {
+  font-size: 2rem;
+}
+.movieOverview {
+  font-size: 1.2rem;
+}
+.recommendedBtn {
+  display: grid;
+  font-family: $font3;
+  place-content: center;
+  width: 100%;
+  background-color: $blueColor1;
+  cursor: pointer;
+  height: 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: $primaryWhite;
+  border: transparent;
+  &:active,
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+@media screen and (min-width: 678px) {
+  .movie__recomended-info {
+    display: grid;
+    // place-content: start;
+    flex-direction: column;
+  }
+  .movieTagline {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .movieTitle {
+    font-size: 2.5rem;
+  }
+  .movieOverview {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  .recommendedBtn {
+    margin-top: 2rem;
+  }
+}

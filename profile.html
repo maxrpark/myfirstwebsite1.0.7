@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile || Movie Masters</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:wght@300;400;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- awesome fonts -->
+    <script
+      src="https://kit.fontawesome.com/6f654f2ea2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header-single">
+      <!-- NAVBAR -->
+      <nav class="nav nav-top">
+        <div class="nav__navbar nav-top__navbar">
+          <a href="index.html"
+            ><img src="./img/logo.png" class="logo" alt=""
+          /></a>
+          <div class="nav__navbar--btns">
+            <div div class="top-search-container">
+              <!-- SEARCH FORM -->
+              <form
+                class="form-top form"
+                id="form"
+                autocomplete="off"
+                action="search.html"
+              >
+                <input
+                  type="text"
+                  placeholder="search"
+                  name="search"
+                  class="form__search form-top__search"
+                  type="submit"
+                />
+              </form>
+              <i i class="fas fa-search search-icon"></i>
+              <!-- END OF SEARCH FORM -->
+            </div>
+            <button class="nav__navbar--btn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- END OF NAVBAR -->
+    </header>
+    <!-- PROFILE SECTION -->
+    <main class="profile">
+      <h1>My Profile</h1>
+      <div class="underline"></div>
+      <div class="profile__container">
+        <div class="profile__container--hero">
+         <div class="hero-container-img">
+          <img
+            src="./img/hero-movie-master.jpg"
+            alt=""
+            class="profile__container--hero-img"
+            id="profile-img"
+          />
+         </div>
+         
+           <div class="change-hero-picture">
+          <i class="fas fa-camera" id="hero-camera"></i>
+
+          <input class="upload-hero-img" type="file" id="user-upload-hero" />
+        </div>
+        </div>
+       
+          <div class="profile__container--user-img">
+            <img
+              src="/img/user_no_photo.png"
+              alt=""
+              class="profile-img-user"
+              id="img-user"
+            />
+          </div>
+           <div class="change-profile-picture">
+             <i class="fas fa-camera profile-camera" id="profile-camera"></i>
+             <input class="upload-profile-img" type="file" id="user-upload-img" />
+        </div>
+          <div class="profile__info">
+            <div class="profile__info--options">
+            <div class="profile__info--edit">
+              <i class="edit-btn fas fa-edit"></i>
+              <small>Edit info</small>
+            </div>
+            <small class="clear">Delete profile</small>
+            </div>
+
+            
+            <div class="profile__info--details">
+              <h4>My name</small>
+              <h3 class="name-of-user">user name</h3>
+              <h4>About me</p>
+              <p class="user-about">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+                quibusdam?
+              </p>
+            </div>
+            <div class="edit-profile-container">
+              <form class="edit-profile" action="">
+                <input
+                  type="text"
+                  id="edit-user-name"
+                  class="edit-profile__name"
+                  placeholder="Name"
+                  autocomplete="off"
+                />
+                <textarea
+                  name=""
+                  id="edit-user-about"
+                  class="edit-profile__text-area-profile"
+                  placeholder="About me"
+                  autocomplete="off"
+                ></textarea>
+                <button class="edit-profile__btn" type="submit">Submite</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- END OF PROFILE SECTION -->
+
+
+    <!-- MY LIST SECTION -->
+    <div class="mylist">
+      <h2>My list</h2>
+      <div class="underline"></div>
+<article class="myMovies">
+  <a class="search-link" href="index.html">Start adding movies to your list </a>
+
+
+</article>
+
+    <!-- END OF MY LIST SECTION -->
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <span class="sidebar__close-btn"><i class="fas fa-times"></i> </span>
+      <div class="sidebar__container">
+        <div class="sidebar__container-profile">
+          <div class="sidebar-img">
+            <img src="./img/user_no_photo.png" class="img img-sidebar" alt="" />
+           <a href="profile.html" class="profile-link">My Profile</a>
+          </div>
+        
+          <h5 class="sidebar-user-name">User Name</h5>
+        </div>
+        <div class="sidebar__container-categories">
+          <h4>Categories</h4>
+          <div class="categoryList category-sidebar"></div>
+        </div>
+        <div class="sidebar__container-settings">
+          <a href="#">settings</a>
+        </div>
+      </div>
+    </div>
+    <!-- END OF SIDEBAR -->
+
+   <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__main">
+  <div class="footer__main--section-one">
+    <a href="index.html"><img class="footer__logo--movie-master" src="./img/logo-movie-master.png" alt=""></a>
+  
+  </div>
+  <div class="footer__main--section-menu">
+    <h3>menu</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="termsandprivacy.html">Legals</a></li>
+    </ul>
+  </div>
+  <div class="footer__main--section-two">
+    <a href="https://www.themoviedb.org/" target="_blank"><img class="footer__logo--TMDB" src="./img/TMDB_LOGO.svg" alt=""></a>
+    <small>power by</small>
+  
+  </div>
+  </div>
+  <div class="footer__details">
+    <p>&copy; <span id="date"></span> <a href="https://myfirstwebsite1-0-4.netlify.app/" target="_blank">Maxi Ruti</a>. All rights reserved.</p>
+  </div>
+</footer>
+<!-- END OF FOOTER -->
+
+    <script type="module" src="./profilePage.js"></script>
+  </body>
+</html>

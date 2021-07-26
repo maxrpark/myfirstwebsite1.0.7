@@ -1,0 +1,22 @@
+.nav {
+  background-color: rgba(0, 0, 0, 0.2);
+  &__navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1070px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    &--btn {
+      border: 0;
+      background-color: transparent;
+      font-size: 1.5rem;
+      color: $primaryWhite;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

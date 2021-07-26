@@ -1,0 +1,22 @@
+// Color
+
+$primaryWhite: #fff;
+$primaryBack: #333;
+$greenColor1: #6eeb83;
+$redColor1: #ff5154;
+$blueColor1: #415a77;
+$yellowColor: rgb(247, 247, 71);
+
+// Fonts
+
+$font1: 'Courgette', cursive;
+$font2: 'Nunito', sans-serif;
+$font3: 'Roboto Condensed', sans-serif;
+
+.underline {
+  background: $blueColor1;
+  height: 5px;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
