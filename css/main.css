@@ -116,13 +116,12 @@ a {
 }
 
 .form-top__search {
-  padding-left: 1rem;
   border-radius: 50px;
   border: transparent;
   cursor: pointer;
   height: 2rem;
-  -webkit-transition: all 3s e;
-  transition: all 3s e;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
 }
 
 .form-top__search:focus {
@@ -160,6 +159,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
+  margin-right: 1rem;
 }
 
 .search-icon {
@@ -425,7 +425,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1070px;
+  max-width: 920px;
   padding: 0 1rem;
   margin: 0 auto;
   -webkit-box-pack: justify;
@@ -702,11 +702,20 @@ a {
 }
 
 .hero__title h1 {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .hero__title h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title h1 {
+    font-size: 4rem;
+  }
+  .hero__title h3 {
+    font-size: 2rem;
+  }
 }
 
 .logo {
@@ -1363,6 +1372,7 @@ a {
 
 .profile__info--edit {
   margin: 0.3rem;
+  font-family: inherit;
 }
 
 .profile__info--edit i {

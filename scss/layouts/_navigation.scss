@@ -1,9 +1,10 @@
 .nav {
   background-color: rgba(0, 0, 0, 0.2);
+
   &__navbar {
     display: flex;
     align-items: center;
-    max-width: 1070px;
+    max-width: 920px;
     padding: 0 1rem;
     margin: 0 auto;
     justify-content: space-between;

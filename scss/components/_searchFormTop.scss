@@ -6,12 +6,11 @@
   transition: all 0.3s ease-in;
 
   &__search {
-    padding-left: 1rem;
     border-radius: 50px;
     border: transparent;
     cursor: pointer;
     height: 2rem;
-    transition: all 3s e;
+    transition: all 3s ease;
 
     &:focus {
       outline: none;
@@ -31,6 +30,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-right: 1rem;
 }
 
 .search-icon {
