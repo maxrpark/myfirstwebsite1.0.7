@@ -40,9 +40,7 @@ function displaModal() {
         }" class="modal__description--img" alt="${title}" />
         <div class="modal__movie--info">
           <h4>${title}</h4>
-          <p>
-           ${overview}
-          </p>
+          <p>${overview.substring(0, 350)}...</p>
         </div>
         </div>
         <a class="btn movie__btn"  data-id="${id}" href="./singleMovie.html">Read More</a>
