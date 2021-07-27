@@ -1384,6 +1384,10 @@ a {
   font-size: 1.2rem;
 }
 
+.profile__info--edit small {
+  cursor: pointer;
+}
+
 .profile__info--details h4,
 .profile__info--details h3 {
   margin-top: 0.3rem;

@@ -92,6 +92,9 @@
       cursor: pointer;
       font-size: 1.2rem;
     }
+    & small {
+      cursor: pointer;
+    }
   }
   &--details {
     & h4,
